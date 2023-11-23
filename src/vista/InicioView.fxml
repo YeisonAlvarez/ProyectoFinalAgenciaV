@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1371.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioControlador">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1363.0" prefWidth="1500.0" styleClass="backgroundColorOpositive" stylesheets="@resources/style.css">
+         <children>
+            <Button fx:id="login_btn" layoutX="1358.0" layoutY="35.0" mnemonicParsing="false" onAction="#redireccionarLogin" prefHeight="26.0" prefWidth="32.0" style="-fx-background-color: #1A244D;">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/login%20blanco.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="1312.0" layoutY="45.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="91.0" layoutX="680.0" layoutY="1209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/registrate.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="registrar_btn" layoutX="358.0" layoutY="1298.0" mnemonicParsing="false" onAction="#redireccionarRegistro" opacity="0.36" prefHeight="38.0" prefWidth="700.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="Registrate Aquí">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <AnchorPane layoutX="56.0" layoutY="340.0" opacity="0.66" prefHeight="292.0" prefWidth="1353.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" styleClass="backgroundColorOpositive" stylesheets="@resources/style.css">
+               <children>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="28.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/chichen-itza-yucatan-mexico.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="28.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/sanandres.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="183.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/gran-muralla-china.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="338.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/guiza_egipto.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="183.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/machu-picchu-peru.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="338.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/la-alhambra-granada-espana.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="494.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/tatacoa.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="494.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/santuario-de-meiji-tokio-japon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="40.0" layoutY="117.0" text="México" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="192.0" layoutY="117.0" text="China" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="344.0" layoutY="117.0" text="Egipto" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="501.0" layoutY="117.0" text="Tokio" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="218.0" text="San Andres" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="192.0" layoutY="218.0" text="México" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="344.0" layoutY="218.0" text="España" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="501.0" layoutY="218.0" text="Colombia" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="545.0" layoutY="14.0" text="!Elige tu destino favorito!" textFill="#335696">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="destinos_btn" layoutX="1253.0" layoutY="135.0" mnemonicParsing="false" onAction="#verDestinos" style="-fx-background-color: #335696;" text="Ver destinos" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="646.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/bora-bora-islas-de-la-sociedad_6007a5de.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="646.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/gran-caiman-islas-caiman_c15a31ba.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="802.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/londres.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="802.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/jamaica_bd82f235.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="955.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/nueva-york_66d209da.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="955.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/roma_2d72ff93.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="1106.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/Cartagena.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="135.0" layoutX="1106.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/destinos/Medellin.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="659.0" layoutY="117.0" text="Bora Bora" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="659.0" layoutY="208.0" text="Gran Caiman " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="814.0" layoutY="107.0" text="Londres" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="814.0" layoutY="208.0" text="Jamaica" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="972.0" layoutY="107.0" text="Nueva York" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="962.0" layoutY="208.0" text="Roma" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1113.0" layoutY="107.0" text="Cartagena,Colombia" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1115.0" layoutY="208.0" text="Medellín,Colombia" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="57.0" layoutY="667.0" opacity="0.68" prefHeight="524.0" prefWidth="1348.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" stylesheets="@resources/style.css">
+               <children>
+                  <ImageView fitHeight="413.0" fitWidth="505.0" layoutX="14.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/Paquetes/altamar.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="192.0" fitWidth="236.0" layoutX="482.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/Paquetes/viaje%20seguro.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="210.0" fitWidth="207.0" layoutX="481.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/Paquetes/plan%20separe.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="216.0" fitWidth="454.0" layoutX="1022.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/Paquetes/disney.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="541.0" layoutY="28.0" text="!Elige tu Paquete favorito!" textFill="#335696">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="393.0" fitWidth="303.0" layoutX="700.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/imagenes/Paquetes/baru.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="paquetes_btn" layoutX="1193.0" layoutY="468.0" mnemonicParsing="false" onAction="#verPaquetes" style="-fx-background-color: #335696;" stylesheets="@resources/style.css" text="Paquetes Aquí" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TextField layoutX="56.0" layoutY="216.0" opacity="0.67" prefHeight="54.0" prefWidth="723.0" style="-fx-background-radius: 30;" text="Busca aquí">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="141.0" fitWidth="661.0" layoutX="56.0" layoutY="38.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="141.0" fitWidth="312.0" layoutX="454.0" layoutY="38.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/avion%202.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

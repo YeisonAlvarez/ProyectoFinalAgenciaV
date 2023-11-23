@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" styleClass="backgroundColor" stylesheets="@resources/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.LoginControlador">
+   <children>
+      <Button fx:id="inicio_btn" layoutX="23.0" layoutY="613.0" mnemonicParsing="false" onAction="#volverInicio" prefHeight="38.0" prefWidth="56.0" style="-fx-background-color: #1A244D;">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/inicio%20home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane focusTraversable="true" layoutX="361.0" layoutY="107.0" opacity="0.85" prefHeight="470.0" prefWidth="758.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <TextField fx:id="usuario_field" alignment="TOP_CENTER" layoutX="150.0" layoutY="136.0" prefHeight="38.0" prefWidth="486.0" promptText="Email" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10; -fx-border-color: #00264D;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="password_field" alignment="TOP_CENTER" layoutX="150.0" layoutY="206.0" prefHeight="38.0" prefWidth="486.0" promptText="Password" style="-fx-background-color: #FFFFFF; -fx-border-color: #00264D; -fx-border-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="recordarPassword_check" layoutX="36.0" layoutY="422.0" mnemonicParsing="false" onAction="#recordarPassword" text="Recordar password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <ImageView fitHeight="26.0" fitWidth="35.0" layoutX="159.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/candado.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="recuperarPassword_btn" layoutX="585.0" layoutY="418.0" mnemonicParsing="false" onAction="#recuperarPassword" style="-fx-background-color: #FFFFFF;" text="Recuperar Password?" underline="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="159.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/login%20blanco.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="administrador_btn" layoutX="336.0" layoutY="281.0" mnemonicParsing="false" onAction="#isAdministrador" text="Administrador">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="149.0" layoutY="116.0" text="Email:" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="186.0" text="Password" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="98.0" fitWidth="114.0" layoutX="353.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/usuario%20azul.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="login_btn" layoutX="593.0" layoutY="599.0" mnemonicParsing="false" onAction="#loguearUsuario" opacity="0.39" prefHeight="46.0" prefWidth="312.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" text="Login" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="79.0" fitWidth="227.0" layoutX="14.0" layoutY="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/imagenes/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="227.0" layoutX="237.0" layoutY="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/imagenes/avion%202.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

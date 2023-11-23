@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" styleClass="backgroundColor" stylesheets="@resources/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CrearPaqueteControlador">
+   <children>
+      <Button fx:id="inicio_btn" layoutX="14.0" layoutY="650.0" mnemonicParsing="false" onAction="#volverInicio" prefHeight="38.0" prefWidth="56.0" style="-fx-background-color: #1A244D;">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/imagenes/inicio%20home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane focusTraversable="true" layoutX="61.0" layoutY="172.0" opacity="0.85" prefHeight="318.0" prefWidth="1278.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <TextField fx:id="nombre_paquete" alignment="TOP_CENTER" layoutX="102.0" layoutY="100.0" prefHeight="38.0" prefWidth="232.0" promptText="nombre_paquete" style="-fx-background-color: #FFFFFF; -fx-border-color: #00264D; -fx-border-radius: 10;" text="Nombre Paquete">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="102.0" layoutY="70.0" text="Nombre del Paquete" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="151.0" text="Servicios Adicionales" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="servicios_adicionales" alignment="TOP_CENTER" layoutX="102.0" layoutY="171.0" prefHeight="114.0" prefWidth="727.0" promptText="servicios_adicionales" style="-fx-background-color: #FFFFFF; -fx-border-color: #00264D; -fx-border-radius: 10;" text="Servicios Adicionales">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="duracion" alignment="TOP_CENTER" layoutX="350.0" layoutY="100.0" prefHeight="38.0" prefWidth="232.0" promptText="duracion" style="-fx-background-color: #FFFFFF; -fx-border-color: #00264D; -fx-border-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="590.0" layoutY="61.0" prefHeight="38.0" prefWidth="56.0" text="Precio:" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="precio" alignment="TOP_CENTER" layoutX="590.0" layoutY="100.0" prefHeight="38.0" prefWidth="232.0" promptText="precio" style="-fx-background-color: #FFFFFF; -fx-border-color: #00264D; -fx-border-radius: 10;" text="Precio">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cupo_maximo" alignment="TOP_CENTER" layoutX="829.0" layoutY="100.0" prefHeight="38.0" prefWidth="232.0" promptText="cupo_maximo" style="-fx-background-color: #FFFFFF; -fx-border-color: #00264D; -fx-border-radius: 10;" text="Cupo Maximo">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="349.0" layoutY="57.0" prefHeight="38.0" prefWidth="77.0" text="Duracion" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="829.0" layoutY="61.0" prefHeight="38.0" prefWidth="110.0" text="Cupo Maximo" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="857.0" layoutY="184.0" prefHeight="38.0" prefWidth="110.0" text="fecha Inicio" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="1062.0" layoutY="184.0" prefHeight="38.0" prefWidth="110.0" text="Fecha Fin" textFill="#1a244d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="fechaInicio_date" layoutX="853.0" layoutY="226.0" prefHeight="42.0" prefWidth="184.0" promptText="Fecha Inicio" />
+            <DatePicker fx:id="fechaFin_date" layoutX="1062.0" layoutY="226.0" prefHeight="42.0" prefWidth="184.0" promptText="Fecha Fin" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="guardar_btn" layoutX="576.0" layoutY="627.0" mnemonicParsing="false" onAction="#crearPaquete" opacity="0.39" prefHeight="46.0" prefWidth="312.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" text="Guardar" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="204.0" layoutX="14.0" layoutY="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/imagenes/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="137.0" layoutX="99.0" layoutY="20.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/imagenes/avion%202.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="661.0" layoutY="95.0" text="Registrar Paquete Aquí" textFill="#1a244d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
